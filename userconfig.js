@@ -12,6 +12,7 @@ const default_config = {
   },
   search: {
     engines: {
+      k: ["https://kagi.com/search?q=", "Kagi"],
       g: ["https://google.com/search?q=", "Google"],
       d: ["https://duckduckgo.com/html?q=", "DuckDuckGo"],
       y: ["https://youtube.com/results?search_query=", "Youtube"],
@@ -45,22 +46,16 @@ const default_config = {
             icon: "binary-tree-2",
             icon_color: "#3c4252",
           },
-        ],
-      }, {
-        name: "Dockers",
-        links: [
           {
             name: "Dockge",
             url: "http://192.168.1.71:5001/",
             icon: "brand-docker",
             icon_color: "#6ca0e4",
           },
-          {
-            name: "Mealie",
-            url: "http://192.168.1.71:9925/",
-            icon: "tools-kitchen-2",
-            icon_color: "#dd842e",
-          },
+        ],
+      }, {
+        name: "Devtools",
+        links: [
           {
             name: "Bookstack",
             url: "http://192.168.1.71:6875/",
@@ -79,89 +74,48 @@ const default_config = {
             icon: "refresh-alert",
             icon_color: "#42a5d4",
           },
+          {
+            name: "NginxPM",
+            url: "http://192.168.1.71:81/",
+            icon: "brand-graphql",
+            icon_color: "#DF4440",
+          },
+          {
+            name: "Vscode",
+            url: "http://192.168.1.71:8443/",
+            icon: "brand-vscode",
+            icon_color: "#0072be",
+          }
+        ],
+      }, {
+        name: "Personal",
+        links: [
+          {
+            name: "Mealie",
+            url: "http://192.168.1.71:9925/",
+            icon: "tools-kitchen-2",
+            icon_color: "#dd842e",
+          },
+          {
+            name: "Memos",
+            url: "http://192.168.1.71:5230/explore",
+            icon: "brand-twitter",
+            icon_color: "#7D7D83",
+          },
+          {
+            name: "qb",
+            url: "http://qbit.clau.io/",
+            icon: "brand-bilibili",
+            icon_color: "#DEF1FF",
+          },
+          {
+            name: "Plex",
+            url: "http://192.168.1.70:32400/web/",
+            icon: "brand-youtube",
+            icon_color: "#e5a00d",
+          },
         ],
       }],
-    },
-    {
-      name: "design",
-      background_url: "src/img/banners/cbg-6.gif",
-      categories: [
-        {
-          name: "inspiration",
-          links: [
-            {
-              name: "pinterest",
-              url: "https://www.pinterest.es/",
-              icon: "brand-pinterest",
-              icon_color: "#ea6962",
-            },
-            {
-              name: "artstation",
-              url: "https://www.artstation.com/?sort_by=community",
-              icon: "chart-area",
-              icon_color: "#7daea3",
-            },
-            {
-              name: "leonardo ai",
-              url: "https://app.leonardo.ai/",
-              icon: "brand-openai",
-              icon_color: "#89b482",
-            },
-            {
-              name: "dribble",
-              url: "https://dribbble.com/following",
-              icon: "brand-dribbble-filled",
-              icon_color: "#d3869b",
-            },
-          ],
-        },
-        {
-          name: "resources",
-          links: [
-            {
-              name: "figma",
-              url: "https://www.figma.com",
-              icon: "brand-figma",
-              icon_color: "#d3869b",
-            },
-            {
-              name: "uxpro",
-              url: "https://uxpro.cc/",
-              icon: "components",
-              icon_color: "#a9b665",
-            },
-            {
-              name: "colorhunt",
-              url: "https://colorhunt.co/",
-              icon: "color-picker",
-              icon_color: "#ea6962",
-            },
-            {
-              name: "adobe color",
-              url: "https://color.adobe.com/es/create/color-wheel",
-              icon: "brand-adobe",
-              icon_color: "#7daea3",
-            },
-            {
-              name: "terminalsexy",
-              url: "https://terminal.sexy",
-              icon: "prompt",
-              icon_color: "#e78a4e",
-            },
-          ],
-        },
-        {
-          name: "resources 3d",
-          links: [
-            {
-              name: "thingiverse",
-              url: "https://www.thingiverse.com/",
-              icon: "circle-letter-t",
-              icon_color: "#7daea3",
-            },
-          ],
-        },
-      ],
     },
     {
       name: "dev",
@@ -177,68 +131,44 @@ const default_config = {
               icon_color: "#7daea3",
             },
             {
-              name: "gitlab",
-              url: "https://gitlab.com/",
-              icon: "brand-gitlab",
-              icon_color: "#e78a4e",
+              name: "bitbucket",
+              url: "https://bitbucket.org/",
+              icon: "brand-bitbucket",
+              icon_color: "#0C66E4",
             },
           ],
         },
         {
-          name: "resources",
+          name: "work links",
           links: [
             {
-              name: "phind",
-              url: "https://www.phind.com/",
-              icon: "brand-openai",
+              name: "Trello",
+              url: "https://trello.com/b/XyKhClVF/",
+              icon: "brand-trello",
               icon_color: "#89b482",
             },
             {
-              name: "flutter",
-              url: "https://docs.flutter.dev/ui",
-              icon: "brand-flutter",
-              icon_color: "#7daea3",
-            },
-            {
-              name: "hacktricks",
-              url: "https://book.hacktricks.xyz/welcome/readme",
-              icon: "biohazard",
-              icon_color: "#ea6962",
-            },
-            {
-              name: "vscode",
-              url: "https://vscode.dev/",
-              icon: "brand-vscode",
-              icon_color: "#7daea3",
-            },
+              name: "Aws",
+              url: "https://us-east-1.signin.aws.amazon.com/",
+              icon: "brand-aws",
+              icon_color: "#ff9900",
+            }
           ],
         },
         {
-          name: "challenges",
+          name: "tools",
           links: [
             {
-              name: "hackthebox",
-              url: "https://app.hackthebox.com",
-              icon: "box",
-              icon_color: "#a9b665",
+              name: "JSON to typescript",
+              url: "https://transform.tools/json-to-typescript",
+              icon: "brand-typescript",
+              icon_color: "#0e7ccf",
             },
             {
-              name: "cryptohack",
-              url: "https://cryptohack.org/challenges/",
-              icon: "brain",
+              name: "wallpapers",
+              url: "https://www.kriegs.net/",
+              icon: "polaroid",
               icon_color: "#e78a4e",
-            },
-            {
-              name: "tryhackme",
-              url: "https://tryhackme.com/dashboard",
-              icon: "brand-onedrive",
-              icon_color: "#ea6962",
-            },
-            {
-              name: "hackerrank",
-              url: "https://www.hackerrank.com/dashboard",
-              icon: "code-asterix",
-              icon_color: "#a9b665",
             },
           ],
         },
