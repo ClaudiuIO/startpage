@@ -52,6 +52,12 @@ const default_config = {
             icon: "brand-docker",
             icon_color: "#6ca0e4",
           },
+          {
+            name: 'Pihole disabled',
+            url: 'http://192.168.1.100/admin/api.php?disable=120&auth=1ff21fde42a45942bb6fbe1bda0ea7e86359c61ab024aed63831ed387e3c6c3b',
+            icon: 'cherry',
+            icon_color: '#eb1a28',
+          }
         ],
       }, {
         name: "Devtools",
@@ -85,6 +91,12 @@ const default_config = {
             url: "http://192.168.1.71:8443/",
             icon: "brand-vscode",
             icon_color: "#0072be",
+          },
+          {
+            name: "Local Syncthing",
+            url: "http://127.0.0.1:8384/",
+            icon: "refresh-alert",
+            icon_color: "#42a5d4",
           }
         ],
       }, {
@@ -113,7 +125,7 @@ const default_config = {
             url: "http://192.168.1.70:32400/web/",
             icon: "brand-youtube",
             icon_color: "#e5a00d",
-          },
+          }
         ],
       }],
     },
@@ -170,6 +182,24 @@ const default_config = {
               icon: "polaroid",
               icon_color: "#e78a4e",
             },
+            {
+              name: "icons",
+              url: "https://tabler.io/icons",
+              icon: "icons",
+              icon_color: "#7daea3",
+            },
+            {
+              name: "colors",
+              url: "https://coolors.co/",
+              icon: "color-swatch",
+              icon_color: "#ea6962",
+            },
+            {
+              name: "Old network links",
+              url: "https://sites.google.com/view/claudevblog/homelab/network",
+              icon: "network",
+              icon_color: "#ea6962",
+            }
           ],
         },
       ],
